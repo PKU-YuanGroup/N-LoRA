@@ -18,7 +18,6 @@
     <img src="images/fig1.png" alt="(a) Orthogonal but Parameter Collision: Tasks $\tau_1$, $\tau_2$, and $\tau_3$ are mutually orthogonal but interaction within each space, resulting in parameter collision. (b) Non-collision and Orthogonal: Tasks $\tau_1$, $\tau_2$, and $\tau_3$ update only along distinct, non-conflicting subspaces, preserving prior task knowledge. (c) Performance Comparison: N-LoRA (red) and O-LoRA (blue) are compared across various metrics, with N-LoRA achieving lower collision rates, improved orthogonality, and superior average accuracy." width="600">
 </p>
 
-
 ## Setup
 
 You can install the required libraries by running 
