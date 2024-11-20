@@ -1,0 +1,54 @@
+{
+    "SC": [
+        {
+            "sampling strategy": "full",
+            "dataset name": "IMDB"
+        }
+    ],
+    "TC": [
+    ],
+    "NLI": [
+        {
+            "sampling strategy": "full",
+            "dataset name": "MNLI"
+        },
+        {
+            "sampling strategy": "full",
+            "dataset name": "CB"
+        },
+        {
+            "sampling strategy": "full",
+            "dataset name": "RTE"
+        }
+    ],
+    "QQP": [
+        {
+            "sampling strategy": "full",
+            "dataset name": "QQP"
+        }
+    ],
+    "WiC": [
+        {
+            "sampling strategy": "full",
+            "dataset name": "WiC"
+        }
+    ],
+    "MultiRC": [
+        {
+            "sampling strategy": "full",
+            "dataset name": "MultiRC"
+        }
+    ],
+    "COPA": [
+        {
+            "sampling strategy": "full",
+            "dataset name": "COPA"
+        }
+    ],
+    "BoolQA": [
+        {
+            "sampling strategy": "full",
+            "dataset name": "BoolQA"
+        }
+    ]
+}
