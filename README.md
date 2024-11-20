@@ -1,17 +1,23 @@
-# Sn-LoRA
+<h2 align="center">
+    <a href="https://arxiv.org/abs/2410.10179">Is Parameter Collision Hindering Continual Learning in LLMs?</a>
+</h2>
+<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest updates. </h5>
 
-- This repo releases our implementation for the N-LoRA model.
-- It is built based on the pretrained T5-large model, and finetuned on our data.
+<h5 align="center">
+    
+[![arXiv](https://img.shields.io/badge/Arxiv-Paper-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.10179) <br>
+[![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](https://github.com/PKU-YuanGroup/N-LoRA/blob/main/LICENSE) 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FPKU-YuanGroup%2FN-LoRA&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=Visitor&edge_flat=false)](https://hits.seeyoufarm.com)
+[![GitHub issues](https://img.shields.io/github/issues/PKU-YuanGroup/N-LoRA?color=critical&label=Issues)](https://github.com/PKU-YuanGroup/N-LoRA/issues?q=is%3Aopen+is%3Aissue)
 
-## Data Preparation
+</h5>
 
-Due to the 10MB size limit for supplementary materials, the dataset used in this work cannot be directly included. However, you can refer to the O-LoRA repository (which can be found in the original O-LoRA paper) for the required data. Please follow the steps below to prepare the dataset:
 
-1. Navigate to the O-LoRA repository (which can be found in the original O-LoRA paper) and locate the `O-LoRA-main/CL_Benchmark` folder.
-2. Copy the benchmark data from the `CL_Benchmark` folder in the O-LoRA repository.
-3. Place the copied data into the `N-LoRA/CL_Benchmark` folder in this repository.
+<h3 align="center">Model Architecture</h3>
+<p align="center">
+    <img src="images/fig1.png" alt="(a) Orthogonal but Parameter Collision: Tasks $\tau_1$, $\tau_2$, and $\tau_3$ are mutually orthogonal but interaction within each space, resulting in parameter collision. (b) Non-collision and Orthogonal: Tasks $\tau_1$, $\tau_2$, and $\tau_3$ update only along distinct, non-conflicting subspaces, preserving prior task knowledge. (c) Performance Comparison: N-LoRA (red) and O-LoRA (blue) are compared across various metrics, with N-LoRA achieving lower collision rates, improved orthogonality, and superior average accuracy." width="600">
+</p>
 
-By completing these steps, you will have the necessary data to reproduce our experiments.
 
 ## Setup
 
