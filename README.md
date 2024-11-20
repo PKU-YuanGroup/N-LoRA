@@ -1,6 +1,7 @@
 <h2 align="center">
     <a href="https://arxiv.org/abs/2410.10179">Is Parameter Collision Hindering Continual Learning in LLMs?</a>
 </h2>
+<h5 align="center"> Code for the N-LoRA method introduced in the paper 'Is Parameter Collision Hindering Continual Learning in LLMs?', , exploring novel approaches to address parameter collision issues in large language models for continual learning. 
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest updates. </h5>
 
 <h5 align="center">
@@ -12,13 +13,15 @@
 
 </h5>
 
-
-<h3 align="center">Model Architecture</h3>
 <p align="center">
-    <img src="images/fig1.png" alt="(a) Orthogonal but Parameter Collision: Tasks $\tau_1$, $\tau_2$, and $\tau_3$ are mutually orthogonal but interaction within each space, resulting in parameter collision. (b) Non-collision and Orthogonal: Tasks $\tau_1$, $\tau_2$, and $\tau_3$ update only along distinct, non-conflicting subspaces, preserving prior task knowledge. (c) Performance Comparison: N-LoRA (red) and O-LoRA (blue) are compared across various metrics, with N-LoRA achieving lower collision rates, improved orthogonality, and superior average accuracy." width="600">
+    <img src="images/fig1.png" alt="Orthogonal and Parameter Collision" width="900">
+</p>
+<p align="center" style="font-size: 14px; font-style: italic;">
+    The Relationship Between Parameter Collision and Orthogonality in Continual Learning
 </p>
 
-## Setup
+
+## 🛠️Setup
 
 You can install the required libraries by running 
 
@@ -31,7 +34,7 @@ You are also required to download the t5-large model from huggingface, put it to
 LLaMA is also supported. You can put your llama model to the folder named ```initial_model``` and rename the model folder as 'llama'.
 
 
-## Training and Evaluation
+## 🚀Training and Evaluation
 
 For t5-large:
 
@@ -99,4 +102,34 @@ order3:
 ```
 bash scripts_llama/order_3.sh> logs_and_outputs_llama/order_3/logs/train_and_infer.log 2>&1 &
 ```
+
+
+
+
+## 📝 Citation
+
+If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
+
+```bibtex
+@article{yang2024parameter,
+  title={Is Parameter Collision Hindering Continual Learning in LLMs?},
+  author={Yang, Shuo and Ning, Kun-Peng and Liu, Yu-Yang and Yao, Jia-Yu and Tian, Yong-Hong and Song, Yi-Bing and Yuan, Li},
+  journal={arXiv preprint arXiv:2410.10179},
+  year={2024}
+}
+```
+
+## 🙏 Acknowledgment
+
+This repository is adapted from [O-LoRA](https://github.com/cmnfriend/O-LoRA). We sincerely thank the authors of O-LoRA for their contributions and efforts.
+
+If you find O-LoRA helpful in your research, please consider citing their work:
+
+```bibtex
+@article{wang2023orthogonal,
+  title={Orthogonal Subspace Learning for Language Model Continual Learning},
+  author={Wang, Xiao and Chen, Tianze and Ge, Qiming and Xia, Han and Bao, Rong and Zheng, Rui and Zhang, Qi and Gui, Tao and Huang, Xuanjing},
+  journal={arXiv preprint arXiv:2310.14152},
+  year={2023}
+}
 
