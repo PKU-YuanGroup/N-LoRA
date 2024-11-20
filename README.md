@@ -1,4 +1,8 @@
-# Sn-LoRA
+<h2 align="center"> <a href="https://arxiv.org/abs/2410.10179">Is Parameter Collision Hindering Continual Learning in LLMs?</a></h2>
+<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
+
+<h5 align="center">
+
 
 - This repo releases our implementation for the N-LoRA model.
 - It is built based on the pretrained T5-large model, and finetuned on our data.
