@@ -1,7 +1,7 @@
 <h2 align="center">
-    <a href="https://arxiv.org/abs/2410.10179">Is Parameter Collision Hindering Continual Learning in LLMs?</a>
+    <a href="https://arxiv.org/abs/2410.10179">Is Parameter Collision Hindering Continual Learning in LLMs? 【Coling 2025🔥】</a>
 </h2>
-<h5 align="center"> Code for the N-LoRA method introduced in the paper 'Is Parameter Collision Hindering Continual Learning in LLMs?', , exploring novel approaches to address parameter collision issues in large language models for continual learning. 
+<h5 align="center"> Code for the N-LoRA method introduced in the COLING 2025 paper 'Is Parameter Collision Hindering Continual Learning in LLMs?', , exploring novel approaches to address parameter collision issues in large language models for continual learning. 
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest updates. </h5>
 
 <h5 align="center">
@@ -19,6 +19,14 @@
 <p align="center" style="font-size: 14px; font-style: italic;">
     The Relationship Between Parameter Collision and Orthogonality in Continual Learning
 </p>
+
+<p align="center">
+    <img src="images/fig2.png" alt="Parameter Collision and Nuclear Norms" width="900">
+</p>
+<p align="center" style="font-size: 14px; font-style: italic;">
+    Parameter collision analysis and nuclear norm distributions for O-LoRA and N-LoRA. O-LoRA exhibits higher parameter collisions and nuclear norms, while N-LoRA effectively reduces collisions, ensuring better orthogonality and task-specific accuracy.
+</p>
+
 
 
 ## 🛠️Setup
@@ -105,6 +113,11 @@ bash scripts_llama/order_3.sh> logs_and_outputs_llama/order_3/logs/train_and_inf
 
 
 
+## 🙏 Acknowledgment
+
+This repository is adapted from [O-LoRA](https://github.com/cmnfriend/O-LoRA). We sincerely thank the authors of O-LoRA for their contributions and efforts, as their work provided inspiration for this research. We also appreciate their contributions and the assistance provided by the authors.
+
+
 
 ## 📝 Citation
 
@@ -119,17 +132,4 @@ If you find this paper useful, please consider staring 🌟 this repo and citing
 }
 ```
 
-## 🙏 Acknowledgment
-
-This repository is adapted from [O-LoRA](https://github.com/cmnfriend/O-LoRA). We sincerely thank the authors of O-LoRA for their contributions and efforts.
-
-If you find O-LoRA helpful in your research, please consider citing their work:
-
-```bibtex
-@article{wang2023orthogonal,
-  title={Orthogonal Subspace Learning for Language Model Continual Learning},
-  author={Wang, Xiao and Chen, Tianze and Ge, Qiming and Xia, Han and Bao, Rong and Zheng, Rui and Zhang, Qi and Gui, Tao and Huang, Xuanjing},
-  journal={arXiv preprint arXiv:2310.14152},
-  year={2023}
-}
 
