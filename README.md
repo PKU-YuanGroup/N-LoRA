@@ -1,8 +1,8 @@
 <h2 align="center">
-    <a href="https://arxiv.org/abs/2410.10179">Is Parameter Collision Hindering Continual Learning in LLMs?</a> <br> 【Coling 2025🔥】
+    【COLING 2025】<a href="https://arxiv.org/abs/2410.10179">Is Parameter Collision Hindering Continual Learning in LLMs?</a> <br>
 </h2>
 <h5 align="center"> Code for the N-LoRA method introduced in the COLING 2025 paper 'Is Parameter Collision Hindering Continual Learning in LLMs?', exploring novel approaches to address parameter collision issues in large language models for continual learning. 
-<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest updates. </h5>
+<h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for the latest updates. </h5>
 
 <h5 align="center">
     
